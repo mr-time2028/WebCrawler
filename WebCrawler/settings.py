@@ -1,4 +1,4 @@
-# Scrapy settings for Digikala project
+# Scrapy settings for WebCrawler project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'Digikala'
+BOT_NAME = 'WebCrawler'
 
-SPIDER_MODULES = ['Digikala.spiders']
-NEWSPIDER_MODULE = 'Digikala.spiders'
+SPIDER_MODULES = ['WebCrawler.spiders']
+NEWSPIDER_MODULE = 'WebCrawler.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'Digikala (+http://www.yourdomain.com)'
+#USER_AGENT = 'WebCrawler (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'Digikala.middlewares.DigikalaSpiderMiddleware': 543,
+#    'WebCrawler.middlewares.WebcrawlerSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'Digikala.middlewares.DigikalaDownloaderMiddleware': 543,
+#    'WebCrawler.middlewares.WebcrawlerDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'Digikala.pipelines.DigikalaPipeline': 300,
+#    'WebCrawler.pipelines.WebcrawlerPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -88,3 +88,4 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 FEED_EXPORT_ENCODING = 'utf-8'    # convert strings to utf-8 format
+USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36'
